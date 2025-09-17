@@ -1,16 +1,18 @@
 
 
 import './App.css'
+import Sidebar from './components/Sidebar.jsx'
 
 function App() {
  
   return (
-    <>
-      <div> 
-       <h1 class="text-3xl font-bold underline">Hello g I am creating Noisely</h1>
-      </div>
-   
-    </>
+   <div className='h-screen bg-black'>
+    <div className='h-[90%] flex'>
+     <Sidebar />
+
+    </div>
+
+   </div>
   )
 }
 
