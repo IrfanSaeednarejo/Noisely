@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div> 
-       <h1>Hello g I am creating Noisely</h1>
+       <h1 class="text-3xl font-bold underline">Hello g I am creating Noisely</h1>
       </div>
    
     </>
