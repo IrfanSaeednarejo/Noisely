@@ -12,8 +12,6 @@ function App() {
      <Sidebar />
     </div>
     <Player/>
-   
-
    </div>
   )
 }
