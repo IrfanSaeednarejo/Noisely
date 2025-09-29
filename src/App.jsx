@@ -4,8 +4,12 @@ import './App.css'
 import Display from './components/Display.jsx'
 import Player from './components/Player.jsx'
 import Sidebar from './components/Sidebar.jsx'
+import { useContext } from 'react'
+import PlayerContext from './context/PlayerContext.jsx'
 
 function App() {
+
+  const {audioRef} = useContext(PlayerContext)
  
   return (
    <div className='h-screen bg-black'>
@@ -14,6 +18,7 @@ function App() {
      <Display/>
     </div>
     <Player/>
+    <audio ref = {audioRef} preload='auto'></audio>
    </div>
   )
 }
