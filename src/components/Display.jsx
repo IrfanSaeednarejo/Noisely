@@ -2,6 +2,7 @@ import { Route, Routes,useLocation } from 'react-router-dom'
 import DisplayHome from './DisplayHome.jsx'
 import DisplayAlbum from './DisplayAlbum.jsx'
 import { useRef , useEffect} from 'react'
+import DisplaySong from './DisplaySong.jsx'
 import { albumsData } from '../assets/frontend-assets/assets.js'
 
 const Display = () => {
@@ -27,6 +28,7 @@ const Display = () => {
        <Routes>
         <Route path='/' element={<DisplayHome />} />
         <Route path='/album/:id' element={<DisplayAlbum />} />
+        <Route path='/song/:id' element={<DisplaySong />} />
        </Routes>
 
 
